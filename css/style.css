@@ -1,0 +1,578 @@
+/*Global CSS*/
+
+*
+{
+	position: relative;
+	z-index: 0;
+}
+
+body
+{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 20px;
+}
+
+a
+{
+	color: inherit;
+}
+
+.about_page,
+.resume,
+.portfolio_page,
+.feedback_page,
+.contact_page
+{
+	padding: 96px 0px;
+}
+
+.white_texts,
+.menu a:focus,
+.here:hover,
+ul a:hover
+{
+	color: #fff;
+}
+
+.center_alignment
+{
+	text-align: center;
+}
+
+.fixed
+{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+#mobileMenu
+{
+	border-radius: 0px 5px 5px 0px;
+}
+
+
+
+.menu
+{
+	background: #333;
+	font-size: 0.7em;
+	z-index: 2;
+}
+
+.block_link
+{
+	display: inline-block;
+}
+
+.capital
+{
+	text-transform: uppercase;
+}
+
+.bold
+{
+	font-weight: 700;
+}
+
+.menu a
+{
+	padding: 15px;
+}
+
+.button,
+.menu a,
+.button:focus,
+.menu a:focus,
+.button:hover,
+.menu a:hover,
+.feedback_page a,
+.feedback_page a:hover,
+.feedback_page a:focus
+{
+	text-decoration: none;
+}
+
+.button,
+.button:focus
+{
+	background: #444;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+}
+
+.button:hover,
+.menu a:hover
+{
+	transition: 0.3s;
+}
+
+.here,
+.menu a:hover
+{
+	color: #f06000;
+}
+
+.photo
+{
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+.resume_details p:nth-child(2),
+.feedback_texts h4
+{
+	font-weight: 200;
+}
+
+.go_top
+{
+	width: 70px;
+	height: 70px;
+	padding: 18px 21px;
+	border-radius: 50%;
+	z-index: 1;
+	right: 0;
+	bottom: 110px;
+	margin-right: 15px;
+	display: none;
+}
+
+/*Front Page CSS*/
+
+.front_page
+{
+	min-height: 755px;
+	background: url(../images/front_page_background2.png), url(../images/front_page_background.jpg);
+	background-size: cover;
+}
+
+.front_page_items
+{
+	padding: 264px 0px;
+}
+
+h1
+{
+	font-size: 3em;
+}
+
+.front_page_items > p
+{
+	margin-bottom: 40px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+
+.learn_more,
+.learn_more:focus
+{
+	background: transparent;
+	border: 2px double;
+}
+
+.button:hover
+{
+	color: #1e191b;
+	border: none;
+	background: #fff;
+}
+
+.visible-xs
+{
+	width: initial;
+}
+
+/*About page*/
+
+.about_page
+{
+	background: #2b2b2b;
+}
+
+.about
+{
+	margin: 20px auto;
+}
+
+h2
+{
+	font-size: 1.7em;
+}
+
+.about_page p
+{
+	color: #7a7a7a;
+	margin-top: 50px;
+}
+
+/*Resume Page*/
+
+.resume_page
+{
+	background: #fff;
+}
+
+h4
+{
+	font-size: 1.1em;
+}
+
+h4 span
+{
+	border-bottom: 3px solid #11abb0;
+}
+
+.resume_details
+{
+	padding-bottom: 30px;
+}
+
+h3
+{
+	font-size: 1.5em;
+	margin-top: 5px;
+}
+
+.resume_details p
+{
+	color: #838c95;
+	font-weight: 400;
+}
+
+.resume_details p:nth-child(2)
+{
+	color: #6e7881;
+	font-size: 1.2em;
+}
+
+.resume_details span
+{
+	padding-right: 10px;
+}
+
+.italic
+{
+	font-style: italic;
+}
+
+.resume
+{
+	border-bottom: 1px solid #e8e8e8;
+	padding-bottom: 0px;
+}
+
+/*Portfolio Image*/
+
+.portfolio_page
+{
+	background: #ebeeee;
+}
+
+.portfolio
+{
+	margin: 15px 0px;
+	transition: linear 0.5s;
+}
+
+.portfolio_details
+{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.60);
+	margin: 0 auto;
+}
+
+.portfolio:hover
+{
+	transform: scale(1.1);
+}
+
+.portfolio:hover .portfolio_details
+{
+	display: block;
+}
+
+/*Stats*/
+
+.stats
+{
+	background: #212121;
+	padding: 45px 0px;
+}
+
+
+/*Feedbacks page*/
+
+.feedback_page
+{
+	background: url(../images/front_page_background2.png), url(../images/testimonials-bg.jpg);
+	background-attachment: scroll, fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 200px;
+}
+
+.feedback_texts h4
+{
+	line-height: 48px;
+}
+
+.feedback_texts h4:before
+{
+	content: open-quote;
+}
+
+.feedback_texts p
+{
+	float: right;
+}
+
+/*Contact Page*/
+
+.contact_page
+{
+	background: #191919;
+}
+
+.contact_form div
+{
+	margin-top: 30px;
+}
+
+.contact_form span
+{
+	color: #11abb0;
+}
+
+input[type=text],
+textarea
+{
+	background: #373233;
+	border: none;
+}
+
+input[type=text]
+{
+	padding: 10px 0px;
+}
+
+textarea
+{
+	resize: none;
+}
+
+input[type=text]:focus,
+textarea:focus
+{
+	background: #11abb0;
+}
+
+input[type=submit]
+{
+	background: #0d0d0d;
+}
+
+/*Footer Part*/
+
+.footer
+{
+	background: #303030;
+	padding-top: 48px;
+	overflow: hidden;
+}
+
+ul
+{
+	list-style-type: none;
+}
+
+li
+{
+	display: inline-block;
+	padding: 15px 25px;
+	transition: 0.5s;
+}
+
+li .fa:hover
+{
+	transition: 0.5s;
+}
+
+.fa-facebook:hover
+{
+	color: #3b5998;
+}
+
+.fa-twitter:hover
+{
+	color: #55acee;
+}
+
+.fa-google-plus:hover
+{
+	color: #dd4b39;
+}
+
+.fa-linkedin:hover
+{
+	color: #007bb5;
+}
+
+.fa-instagram:hover
+{
+	color: #cd486b;
+}
+
+.fa-pinterest-p:hover
+{
+	color: #cb2027;
+}
+
+.fa-skype:hover
+{
+	color: #00aff0;
+}
+
+.copyright
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.7em;
+}
+
+/*Media Query*/
+
+@media (max-width: 767px) 
+{
+	body
+	{
+		font-size: 15px;
+		text-align: center;
+	}
+
+	h1
+	{
+		font-size: 2.4em;
+	}
+
+	.menu
+	{
+		display: none;
+	}
+
+	.block_link:not(.learn_more)
+	{
+		display: block;
+	}
+
+	.menu nav:before
+	{
+		display: table;
+		content: '';
+	}
+
+	.fixed:nth-child(2)
+	{
+		top: 50px;
+	}
+
+	.go_top
+	{
+		/*width: 50px;
+		height: 50px;
+		bottom: 0px;
+		margin-right: 1px;
+		padding: 15px 0px;*/
+		display: none;
+
+	}
+
+	.about_page h2
+	{
+		margin-top: 50px;
+	}
+
+	.portfolio
+	{
+		margin-top: 30px;
+	}
+
+	.portfolio_details 
+	{
+		padding-top: 75px;
+	}
+
+	.portfolio:hover
+	{
+		transform: scale(1.05);
+	}
+
+	.stats p
+	{
+		padding-bottom: 15px;
+	}
+
+	input[type=text],
+	textarea
+	{
+		width: 100%;
+	}
+
+	ul
+	{
+		display: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+	h1
+	{
+		font-size: 2.6em;
+	}
+
+	.portfolio_details 
+	{
+		padding-top: 75px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px)
+{
+	.portfolio_details 
+	{
+		padding-top: 70px;
+	}
+
+	input[type=text],
+	textarea
+	{
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px)
+{
+	.portfolio_details 
+	{
+		padding-top: 60px;
+	}
+
+	input[type=text],
+	textarea
+	{
+		width: 100%;
+	}
+}
